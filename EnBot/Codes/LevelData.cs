@@ -1,13 +1,13 @@
 ﻿public class LevelData
 {
-    public int level;                           //스테이지의 레벨
-    public int row, column;                     //블록 행,열
-    public int leftEnergy;                      //맵 상에 남아있는 목표물(에너지 캔)
-    public int bestScore;                       //최고 점수(미구현)
-    public float limitTime;                     //제한 시간
+    public int level;                           //レベル
+    public int row, column;                     //マップに配置するオブジェクトの行と列
+    public int leftEnergy;                      //マップに残ってる電池の数
+    public int bestScore;                       //最高点数
+    public float limitTime;                     //制限時間
 
-    public int[][] blockData;                   //블록 데이터
-    public int[][] floorData;                   //바닥 데이터
+    public int[][] blockData;                   //壁、電池、岩などのデータを保持するブロックデータ
+    public int[][] floorData;                   //床、出口などのデータを保持するフロアデータ
 
     public LevelData()
     {

@@ -9,11 +9,11 @@ public sealed class GameManager : MonoBehaviour {
     public int level;
     public int leftEnergies;
     public float leftTime;
-    public int openedStages = 1;                    // 초기에 열려있는 스테이지는 1개
+    public int openedStages = 1;                    // 最初に開いてるレベル。レベル1以外のボタンは押せない。
 
-    public bool canControlPlayer = true;            // 플레이어 컨트롤 가능여부
+    public bool canControlPlayer = true;            // プレイヤーのコントロール可能か不可能か。
 
-    private float timeSwitch = 0.0f;                // 제한 시간을 멈출 때 0, 감소시킬 때 1
+    private float timeSwitch = 0.0f;                // 制限時間の流れを止める時は0.0、減らす時は1.0。
 
 
     void Awake ()
@@ -26,7 +26,7 @@ public sealed class GameManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);              // オブジェクトが破壊されないようにする。
     }
 
     void Update ()
@@ -38,10 +38,10 @@ public sealed class GameManager : MonoBehaviour {
     void OnLevelWasLoaded (int index)
     {
         level += 1;
-        if (index == 1)                     // 스테이지 선택 씬에서
+        if (index == 1)                     // ステージ選択のシーンで
             timeSwitch = 0.0f;
 
-        else if (index == 2)                // 인게임 씬에서
+        else if (index == 2)                // ゲームプレイのシーンで
             InitGame();
     }
 

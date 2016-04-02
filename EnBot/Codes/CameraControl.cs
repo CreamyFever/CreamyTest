@@ -3,22 +3,22 @@ using System.Collections;
 
 public class CameraControl : MonoBehaviour {
 
-    public Transform player;                    // 따라갈 플레이어
+    public Transform player;                    // ターゲットとなるプレイヤー
 
-    // 여백, 카메라가 쫓아오는 속도
+    // マージン, カメラが追ってくるスピード
     public Vector2 margin, smoothing;
 
     [HideInInspector]
-    public Vector3 min, max;                    // 맵의 최소(왼쪽 하단), 최대 좌표(오른쪽 상단)
-    private const float mulFloat = 0.64f;       // 블록 한 개의 사이즈.
-    private int row, col;                       // 스테이지 매니저로부터 받아올 행과 열 수
-    private float mapWidth, mapHeight;          // 맵의 가로세로 길이
+    public Vector3 min, max;                    // マップの左下と右上の座標
+    private const float mulFloat = 0.64f;       // グリッドのサイズ
+    private int row, col;                       // 行と列に配置するセルの数
+    private float mapWidth, mapHeight;          // マップの横と縦の幅
 
-    public Camera mainCam;                      // 메인 카메라
+    public Camera mainCam;                      // メインカメラ
 
     public void Start()
     {
-        int rowOffset, colOffset;                           // 보정값
+        int rowOffset, colOffset;                           // オフセット
         player = GameObject.Find("Enbot(Clone)").transform;
         row = StageManager.instance.stLevelData.row;
         col = StageManager.instance.stLevelData.column;
@@ -58,7 +58,7 @@ public class CameraControl : MonoBehaviour {
         if (Mathf.Abs(y - player.position.y) > margin.y)
             y = Mathf.Lerp(y, player.position.y, smoothing.y * Time.deltaTime);
         
-        // 카메라 화면 가로 길이의 절반
+        // カメラビューの横の半分
         float cameraHalfWidth = mainCam.orthographicSize * ((float)Screen.width / Screen.height);
 
         x = Mathf.Clamp(x, min.x + cameraHalfWidth, max.x - cameraHalfWidth);
