@@ -1,14 +1,8 @@
-ÇÑ ´Þ ÈÄ¿¡ °³ÃÖµÉ ¿¹Á¤ÀÎ Ä¸½ºÅæ °æÁø´ëÈ¸¿¡ ´ëºñÇØ¼­ À¯´ÏÆ¼·Î ÀÛ¾÷ ÁßÀÎ ³»¿ëÀÇ ÀÏºÎÀÔ´Ï´Ù.
-Áï, ÇöÀçÁøÇàÇüÀ¸·Î ÀÛ¾÷ ¹× ¼öÁ¤ ÁßÀÔ´Ï´Ù.
-
-°íÀü°ÔÀÓ ¼ÒÄÚ¹ÝÀ» º¥Ä¡¸¶Å·ÇÑ °ÔÀÓÀ» Á¦ÀÛ ÁßÀÌ¸ç, °æÁø´ëÈ¸ ÀÏ±îÁö Ãß°¡ ¾÷µ¥ÀÌÆ® ¿¹Á¤ÀÔ´Ï´Ù.
-
-
-LevelData - ·¹º§À» ±¸¼ºÇÏ´Â µ¥ÀÌÅÍ°¡ ´ã±ä Å¬·¡½ºÀÔ´Ï´Ù.
-JsonFileManager - JSON ÆÄÀÏÀ» ÀÐ¾îµé¿©¼­ ·¹º§µ¥ÀÌÅÍÀÇ ¸®½ºÆ®¿¡ ´ëÀÔÇÕ´Ï´Ù.
-GameManager - ¾ÕÀ¸·Î °ÔÀÓÀÇ »óÅÂ¸¦ °ü¸®ÇÒ ¸Å´ÏÀú Å¬·¡½º. ¿©±â¿¡´Â °ÔÀÓ ÃÊ±âÈ­¿Í ·¹º§ ³Ñ¾î°¡´Â ±â´É »ÓÀÔ´Ï´Ù.
-StageManager - JsonFileManager·ÎºÎÅÍ ÀÐ¾îµéÀÎ ·¹º§µ¥ÀÌÅÍ¸¦ ¾À¿¡ ¹èÄ¡ÇÕ´Ï´Ù.
-Cell - ¸Ê ºí·Ï, ¿òÁ÷ÀÌ´Â °´Ã¼µéÀÇ »óÀ§ Å¬·¡½ºÀÔ´Ï´Ù.
-MovingObject - °ÔÀÓ »óÀÇ ¸ðµç ¿òÁ÷ÀÌ´Â ¹°Ã¼ÀÇ »óÀ§ Å¬·¡½ºÀÔ´Ï´Ù.
-Player - MovingObject¸¦ »ó¼Ó¹ÞÀº ÇÏÀ§ Å¬·¡½ºÀÔ´Ï´Ù.
-StageEnable - ½ºÅ×ÀÌÁö ¼±ÅÃ ¾ÀÀÇ ¹öÆ°µéÀ» ºñÈ°¼ºÈ­ »óÅÂ·Î ÃÊ±âÈ­ÇÏ°í, Å¬¸®¾îÇÑ ½ºÅ×ÀÌÁö ¼ö¸¸Å­ ¹öÆ°À» È°¼ºÈ­ÇÕ´Ï´Ù.
+ï»¿LevelData - ãƒ¬ãƒ™ãƒ«ã‚’æ§‹æˆã™ã‚‹ãƒ‡ãƒ¼ã‚¿ãŒä¿å­˜ã•ã‚Œã‚‹ã‚¯ãƒ©ã‚¹(ãƒ¬ãƒ™ãƒ«ã€è¡Œã¨åˆ—ã®æ•°ã€ãƒžãƒƒãƒ—ä¸Šã«ã‚ã‚‹è·ç‰©ã®æ•°ã€åˆ¶é™æ™‚é–“ãªã©)
+JsonFileManager - JSONãƒ•ã‚¡ã‚¤ãƒ«ã‚’èª­ã¿è¾¼ã¿ã€ãƒ¬ãƒ™ãƒ«ãƒ‡ãƒ¼ã‚¿ã®ãƒªã‚¹ãƒˆã«ä¸Šæ›¸ãã€‚
+GameManager - ã‚²ãƒ¼ãƒ ã®åˆæœŸåŒ–ã¨æ¬¡ã®ãƒ¬ãƒ™ãƒ«ã«é€²è¡Œã™ã‚‹æ©Ÿèƒ½ã ã‘å®Ÿè£…ã•ã‚Œã¦ã„ã‚‹ã€‚
+StageManager - JsonFileManagerã‹ã‚‰èª­ã¿å–ã£ã¦ãƒ¬ãƒ™ãƒ«ãƒ‡ãƒ¼ã‚¿ã‚’ã‚·ãƒ¼ãƒ³ã«é…ç½®
+Cell - ãƒ¬ãƒ™ãƒ«ã‚’æ§‹æˆã™ã‚‹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ä¸Šä½ã‚¯ãƒ©ã‚¹ã€‚
+MovingObject - å‹•ãç‰©ä½“ã®ã‚¯ãƒ©ã‚¹ã€‚
+Player - ä¸Šä½ã‚¯ãƒ©ã‚¹ã§ã‚ã‚‹ã€ŒMovingObjectã€ã‚’ç¶™æ‰¿ã™ã‚‹ã‚¯ãƒ©ã‚¹ã€‚
+StageEnable - ã‚¹ãƒ†ãƒ¼ã‚¸ã‚»ãƒ¬ã‚¯ãƒˆã®ã‚·ãƒ¼ãƒ³ã§ãƒœã‚¿ãƒ³ã‚’ç„¡åŠ¹åŒ–ã—ã¦ã€ã‚¯ãƒªã‚¢ã—ãŸã‚¹ãƒ†ãƒ¼ã‚¸ã®æ•°ã ã‘ãƒœã‚¿ãƒ³ã‚’æœ‰åŠ¹åŒ–ã™ã‚‹ã€‚
